@@ -11,6 +11,6 @@ public class CalcPi {
 		double term = Math.pow (-1, i) / (2 * i + 1);
 		sum += term;
     	}
-        System.out.println("pi, approximated: " + sum * 4); 
+        System.out.println("pi, approximated:     " + sum * 4); 
     }
 }
