@@ -4,10 +4,12 @@ public class Collatz {
 	{
 	    int seed = Integer.parseInt(args[0]);
         String mode = args[1];
-		
+
 		if (mode.equals("v"))
 		{
-			for (int i = 1; i <= seed; i++) 
+			System.out.println("1 4 2 1 (4)");
+			
+			for (int i = 2; i <= seed; i++) 
 			{
 				int x = i;
 				int steps = 1;
@@ -27,7 +29,7 @@ public class Collatz {
 			
 				System.out.println("(" + steps + ")");
             } 	
-		}
+		} 
 			System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");	
     }
 }
